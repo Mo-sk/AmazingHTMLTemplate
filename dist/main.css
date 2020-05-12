@@ -8,13 +8,19 @@ html, body {
 .navbar {
   width: 100%;
   height: 70px;
-  background-color: #2e2d2d;
+  background-color: #000000;
 }
 
 .hero {
   width: 100%;
   height: 200px;
-  background-color: #bd2a2a;
+  background-color: #ff0000;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: #000000;
 }
 
 .blue-section {
@@ -43,11 +49,57 @@ html, body {
 }
 
 .blue-section .bs-bloc.light-blue {
-  background-color: #867ee8;
+  background-color: #4133ff;
 }
 
 .blue-section .bs-bloc.dark-blue {
-  background-color: #1f1882;
+  background-color: #070066;
+}
+
+.yellow-section {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.yellow-section .yl-bloc {
+  flex: 1;
+  height: 100%;
+}
+
+.yellow-section .yl-bloc.light-yellow {
+  background-color: #fffb00;
+}
+
+.yellow-section .yl-bloc.dark-yellow {
+  background-color: #ccc900;
+}
+
+.grey-section {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grey-section .gy-bloc {
+  flex: 1;
+  height: 100%;
+}
+
+.grey-section .gy-bloc.grey {
+  background-color: #8a8a8a;
+}
+
+.grey-section .gy-bloc.light-grey {
+  background-color: #d7d7d7;
+}
+
+.grey-section .gy-bloc.dark-grey {
+  background-color: #3e3e3e;
 }
 
 /*

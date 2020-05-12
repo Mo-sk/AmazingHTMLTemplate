@@ -1,15 +1,20 @@
 
 //Values
 $navbat-height: 70px;
+$footer-height: 150px;
 $hero-height: 200px;
 $blue-section-height: 250px;
-$light-color: 20;
-$dark-color:20;
+$yellow-section-height: 250px;
+$grey-section-height: 350px;
+$light-color: 10;
+$heavy-color: 30;
 
 //Colors
-$noir: #2e2d2d;
-$rouge: #bd2a2a;
-$bleu: #3428d8;
+$noir: #000000;
+$rouge: #ff0000;
+$bleu: #1100ff;
+$jaune: #fffb00;
+$gris: #8a8a8a;
 
 //Breakpoints
 $xsmall:370px;
@@ -18,27 +23,33 @@ $medium:1080px;
 $large:1400px;
 $xlarge:1920px;
 
-html, body{
+html, body {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: $navbat-height;
     background-color: $noir;
     
 }
 
-.hero{
+.hero {
     width: 100%;
     height: $hero-height;
     background-color: $rouge;
 }
 
-.blue-section{
+.footer {
+    width: 100%;
+    height: $footer-height;
+    background-color: $noir;
+}
+
+.blue-section {
     width: 100%;
     height: $blue-section-height;
     display: flex;
@@ -55,7 +66,50 @@ html, body{
             background-color: lighten($bleu, $light-color);
         }
         &.dark-blue{
-            background-color: darken($bleu, $dark-color);
+            background-color: darken($bleu, $heavy-color);
+        }
+    }
+}
+
+.yellow-section {
+    width: 100%;
+    height: $yellow-section-height;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .yl-bloc {
+        flex: 1;
+        height: 100%;
+        
+        &.light-yellow {
+            background-color: $jaune;
+        }
+        &.dark-yellow {
+            background-color: darken($jaune, $light-color);
+        }
+    }
+}
+
+.grey-section {
+    width: 100%;
+    height: $grey-section-height;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .gy-bloc {
+        flex: 1;
+        height: 100%;
+
+        &.grey {
+            background-color: $gris;
+        }
+        &.light-grey {
+            background-color: lighten($gris, $heavy-color);
+        }
+        &.dark-grey {
+            background-color: darken($gris, $heavy-color);
         }
     }
 }
