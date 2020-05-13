@@ -52,8 +52,16 @@ html, body {
   background-color: #4133ff;
 }
 
+.blue-section .bs-bloc.light-blue:hover {
+  background-color: #584dff;
+}
+
 .blue-section .bs-bloc.dark-blue {
-  background-color: #070066;
+  background-color: #0e00cc;
+}
+
+.blue-section .bs-bloc.dark-blue:hover {
+  background-color: #0c00b3;
 }
 
 .yellow-section {
@@ -73,8 +81,16 @@ html, body {
   background-color: #fffb00;
 }
 
+.yellow-section .yl-bloc.light-yellow:hover {
+  background-color: #fffc4d;
+}
+
 .yellow-section .yl-bloc.dark-yellow {
   background-color: #ccc900;
+}
+
+.yellow-section .yl-bloc.dark-yellow:hover {
+  background-color: #e6e200;
 }
 
 .grey-section {
@@ -94,12 +110,32 @@ html, body {
   background-color: #8a8a8a;
 }
 
+.grey-section .gy-bloc.grey:hover {
+  background-color: #7d7d7d;
+}
+
 .grey-section .gy-bloc.light-grey {
   background-color: #d7d7d7;
 }
 
+.grey-section .gy-bloc.light-grey:hover {
+  background-color: #878787;
+}
+
 .grey-section .gy-bloc.dark-grey {
   background-color: #3e3e3e;
+}
+
+.grey-section .gy-bloc.dark-grey:hover {
+  background-color: #313131;
+}
+
+@media screen and (min-width: 1920px) {
+  #line {
+    width: 30%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 /*

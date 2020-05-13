@@ -8,6 +8,8 @@ $yellow-section-height: 250px;
 $grey-section-height: 350px;
 $light-color: 10;
 $heavy-color: 30;
+$light-hover-color: 5;
+$heavy-hover-color: 15;
 
 //Colors
 $noir: #000000;
@@ -64,9 +66,15 @@ html, body {
 
         &.light-blue{
             background-color: lighten($bleu, $light-color);
+            &:hover{
+                background-color: lighten($bleu, $heavy-hover-color);
+            }
         }
         &.dark-blue{
-            background-color: darken($bleu, $heavy-color);
+            background-color: darken($bleu, $light-color);
+            &:hover{
+                background-color: darken($bleu, $heavy-hover-color);
+            }
         }
     }
 }
@@ -84,9 +92,15 @@ html, body {
         
         &.light-yellow {
             background-color: $jaune;
+            &:hover{
+                background-color: lighten($jaune, $heavy-hover-color);
+            }
         }
         &.dark-yellow {
             background-color: darken($jaune, $light-color);
+            &:hover{
+                background-color: darken($jaune, $light-hover-color);
+            }
         }
     }
 }
@@ -104,16 +118,32 @@ html, body {
 
         &.grey {
             background-color: $gris;
+            &:hover{
+                background-color: darken($gris, $light-hover-color);
+            }
         }
         &.light-grey {
             background-color: lighten($gris, $heavy-color);
+            &:hover{
+                background-color: darken($gris, 1);
+            }
         }
         &.dark-grey {
             background-color: darken($gris, $heavy-color);
+            &:hover{
+                background-color: darken($gris, 35);
+            }
         }
     }
 }
 
+@media screen and (min-width: $xlarge){
+    #line {
+        width: 30%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
 /*
 @media (max-width: $medium) {
     .blue-section {
