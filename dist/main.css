@@ -17,6 +17,12 @@ html, body {
   background-color: #ff0000;
 }
 
+@media screen and (max-width: 1920px) {
+  .hero {
+    height: 400px;
+  }
+}
+
 .footer {
   width: 100%;
   height: 150px;
@@ -131,10 +137,11 @@ html, body {
 }
 
 @media screen and (min-width: 1920px) {
-  #line {
-    width: 30%;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .inline {
+    height: 250px;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
   }
 }
 

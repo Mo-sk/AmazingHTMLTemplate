@@ -43,6 +43,9 @@ html, body {
     width: 100%;
     height: $hero-height;
     background-color: $rouge;
+    @media screen and (max-width: $xlarge){
+        height: 400px;
+    }
 }
 
 .footer {
@@ -111,6 +114,7 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    @media screen and (max-width: $medium) { }
 
     .gy-bloc {
         flex: 1;
@@ -138,10 +142,11 @@ html, body {
 }
 
 @media screen and (min-width: $xlarge){
-    #line {
-        width: 30%;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .inline{
+        height: $blue-section-height;
+        width: 100%;
+        display: inline-flex;
+        flex-wrap: nowrap;
     }
 }
 /*
