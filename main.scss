@@ -114,7 +114,7 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    @media screen and (max-width: $medium) { }
+
 
     .gy-bloc {
         flex: 1;
@@ -148,6 +148,10 @@ html, body {
         display: inline-flex;
         flex-wrap: nowrap;
     }
+}
+
+@media screen and (max-width: $medium) { 
+
 }
 /*
 @media (max-width: $medium) {
